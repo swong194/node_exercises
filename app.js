@@ -13,9 +13,7 @@ var app = express();
 
 //data base setup
 var mongodb = "mongodb://sunny:password@ds235768.mlab.com:35768/node_exercises";
-mongoose.connect(mongodb, {
-  useMongoClient: true
-});
+mongoose.connect(mongodb);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 
