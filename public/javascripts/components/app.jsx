@@ -4,12 +4,7 @@ import Nav from "./Navigation/Nav";
 import CatalogContainer from "./Catalog/CatalogContainer";
 
 const App = () => {
-  return (
-    <div>
-      <Route path="/" component={Nav} />
-      <Route path="/" component={CatalogContainer} />
-    </div>
-  );
+  return <Route path="/" component={CatalogContainer} />;
 };
 
 export default App;

@@ -13,7 +13,7 @@ AuthorSchema.virtual("name").get(() => {
 });
 
 AuthorSchema.virtual("url").get(() => {
-  return "/catalog/author" + this._id;
+  return "/api/author" + this._id;
 });
 
 module.exports = mongoose.model("Author", AuthorSchema);
