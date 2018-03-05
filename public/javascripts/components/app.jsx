@@ -1,7 +1,15 @@
 import React from "react";
+import { Route } from "react-router-dom";
+import Nav from "./Navigation/Nav";
+import CatalogContainer from "./Catalog/CatalogContainer";
 
 const App = () => {
-  return <h1>Hello</h1>;
+  return (
+    <div>
+      <Route path="/" component={Nav} />
+      <Route path="/" component={CatalogContainer} />
+    </div>
+  );
 };
 
 export default App;
