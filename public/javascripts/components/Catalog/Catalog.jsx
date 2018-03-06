@@ -3,15 +3,6 @@ import Nav from "../Navigation/Nav";
 import styles from "./Catalog.scss";
 
 export default class Catalog extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {
-    this.props.fetchAuthors();
-    this.props.fetchBooks();
-  }
-
   render() {
     const links = { authors: "/authors", books: "/books" };
     return (
