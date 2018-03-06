@@ -3,10 +3,12 @@
   top: 0;
   width: 100%;
   box-sizing: border-box;
+  box-shadow: 0 4px 2px -1px gray;
   display: flex;
   justify-content: space-between;
   background-color: white;
   padding: 20px;
+  margin-bottom: 10px;
   font-size: 16px;
   color: black;
   a {

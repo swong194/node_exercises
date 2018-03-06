@@ -6,9 +6,9 @@ export default class Catalog extends React.Component {
   render() {
     const links = { authors: "/authors", books: "/books" };
     return (
-      <section className={styles.catalog}>
+      <section>
         <Nav links={links} />
-        <div>
+        <div className={styles.catalog}>
           <h1>Hello to a node-express exercise</h1>
         </div>
       </section>
