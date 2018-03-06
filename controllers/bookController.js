@@ -6,7 +6,16 @@ exports.index = function(req, res) {
 
 // Display list of all books.
 exports.book_list = function(req, res) {
-  Book.find({}, (err, cursor) => res.json(cursor));
+  Book.find({}, (err, cursor) => {
+    if (err) {
+      return res.status(400).json(err);
+    }
+    const data = {};
+    cursor.forEach(book => {
+      data[book.id] = book;
+    });
+    return res.status(200).json(data);
+  });
 };
 
 // Display detail page for a specific book.
