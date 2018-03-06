@@ -7,6 +7,13 @@ export default class Book extends React.Component {
   }
 
   render() {
-    return <section>Hello from Book</section>;
+    const books = this.props.books.map(book => (
+      <li key={book._id}>{book.title}</li>
+    ));
+    return (
+      <section>
+        <ul>{books}</ul>
+      </section>
+    );
   }
 }
