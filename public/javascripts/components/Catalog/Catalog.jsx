@@ -9,6 +9,7 @@ export default class Catalog extends React.Component {
 
   componentDidMount() {
     this.props.fetchAuthors();
+    this.props.fetchBooks();
   }
 
   render() {

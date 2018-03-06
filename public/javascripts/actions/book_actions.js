@@ -12,7 +12,7 @@ export const receiveBooks = books => {
 
 export const fetchBooks = () => dispatch => {
   return BookAPIUtil.fetchBooks().then(
-    books => dispatch(receiveBooks(books)),
+    books => dispatch(receiveBooks(books.data)),
     errors => dispatch(receiveErrors(errors))
   );
 };
