@@ -7,11 +7,16 @@
   justify-content: space-between;
   background-color: white;
   padding: 20px;
-  font-size: 16px; }
+  font-size: 16px;
+  color: black; }
+  ._2pvQybEpZNHwZ-0SLueFZH a {
+    text-decoration: none;
+    color: inherit; }
+    ._2pvQybEpZNHwZ-0SLueFZH a:focus {
+      color: black; }
 
 .j8PKlWJaR8bGw9GLhCio6 a {
-  margin: 0 10px;
-  text-decoration: none; }
+  margin: 0 10px; }
   .j8PKlWJaR8bGw9GLhCio6 a:hover {
     text-decoration: underline; }
 ._3GzVnQTVaUii-eCI0TxwIY {

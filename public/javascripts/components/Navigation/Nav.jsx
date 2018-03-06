@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./Nav.scss";
 
 export default class Nav extends React.Component {
@@ -18,7 +18,9 @@ export default class Nav extends React.Component {
 
     return (
       <nav className={styles.nav}>
-        <section className={styles.nav__left}>Another Public Library</section>
+        <Link to="/" className={styles.nav__left}>
+          Another Public Library
+        </Link>
         <section className={styles.nav__right}>{NavLinks}</section>
       </nav>
     );
