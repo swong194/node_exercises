@@ -2,10 +2,6 @@ import React from "react";
 import styles from "./Author.scss";
 
 export default class Author extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     this.props.fetchAuthors();
   }
