@@ -6,7 +6,7 @@ exports.index = function(req, res) {
 
 // Display list of all books.
 exports.book_list = function(req, res) {
-  res.send("NOT IMPLEMENTED: Book list");
+  Book.find({}, (err, cursor) => res.json(cursor));
 };
 
 // Display detail page for a specific book.

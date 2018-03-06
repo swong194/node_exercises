@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import Catalog from "./Catalog";
-import { fetchAuthors } from "../../actions/author_actions.js";
+import { fetchAuthors } from "../../actions/author_actions";
+import { fetchBooks } from "../../actions/book_actions";
 
 const mapStateToProps = state => {
   return {};
@@ -8,7 +9,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchAuthors: () => dispatch(fetchAuthors())
+    fetchAuthors: () => dispatch(fetchAuthors()),
+    fetchBooks: () => dispatch(fetchBooks())
   };
 };
 
