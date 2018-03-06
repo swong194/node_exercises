@@ -2,12 +2,23 @@
   position: sticky;
   top: 0;
   width: 100%;
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  font-size: 16px; }
+
+.j8PKlWJaR8bGw9GLhCio6 a {
+  margin: 0 10px;
+  text-decoration: none; }
+  .j8PKlWJaR8bGw9GLhCio6 a:hover {
+    text-decoration: underline; }
 ._3GzVnQTVaUii-eCI0TxwIY {
   background-color: pink; }
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: sans-serif; }
 
 /*# sourceMappingURL=style.css.map*/

@@ -1,10 +1,14 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Nav from "./Navigation/Nav";
 import CatalogContainer from "./Catalog/CatalogContainer";
 
 const App = () => {
-  return <Route path="/" component={CatalogContainer} />;
+  return (
+    <Switch>
+      <Route path="/" component={CatalogContainer} />
+    </Switch>
+  );
 };
 
 export default App;

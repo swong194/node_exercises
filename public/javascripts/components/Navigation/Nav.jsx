@@ -8,14 +8,18 @@ export default class Nav extends React.Component {
     if (this.props.links) {
       linkNames = Object.keys(this.props.links);
     }
-    const NavLinks = linkNames.map(link => {
-      return <NavLink to={this.props.links[link]}>{link}</NavLink>;
+    const NavLinks = linkNames.map((link, idx) => {
+      return (
+        <NavLink key={idx} to={this.props.links[link]}>
+          {link}
+        </NavLink>
+      );
     });
 
     return (
       <nav className={styles.nav}>
-        <section>Another Public Library</section>
-        <section>{NavLinks}</section>
+        <section className={styles.nav__left}>Another Public Library</section>
+        <section className={styles.nav__right}>{NavLinks}</section>
       </nav>
     );
   }

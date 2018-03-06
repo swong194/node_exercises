@@ -12,9 +12,10 @@ export default class Catalog extends React.Component {
   }
 
   render() {
+    const links = { authors: "/authors", books: "/books" };
     return (
       <section className={styles.catalog}>
-        <Nav />
+        <Nav links={links} />
         <div>
           <h1>Hello to a node-express exercise</h1>
         </div>
