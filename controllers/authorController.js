@@ -2,7 +2,16 @@ var Author = require("../models/author");
 
 // Display list of all Authors.
 exports.author_list = function(req, res, next) {
-  Author.find({}, (err, cursor) => res.json(cursor));
+  Author.find({}, (err, cursor) => {
+    if (err) {
+      return res.status(400).json(err);
+    }
+    const data = {};
+    cursor.forEach(author => {
+      data[author.id] = author;
+    });
+    return res.status(200).json(data);
+  });
 };
 
 // Display detail page for a specific Author.
