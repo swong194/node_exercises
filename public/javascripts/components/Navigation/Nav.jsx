@@ -19,7 +19,7 @@ export default class Nav extends React.Component {
     return (
       <nav className={styles.nav}>
         <Link to="/" className={styles.nav__left}>
-          Another Public Library
+          <h1>Another Public Library</h1>
         </Link>
         <section className={styles.nav__right}>{NavLinks}</section>
       </nav>
